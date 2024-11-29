@@ -24,3 +24,15 @@
         > En el [body] colocamos todo lo que se verá en la página web, como imágenes, textos, videos y animaciones
      </body>
    </html>
+
+# Explicaciones sobre Tags 
+
+## Las tags van hacer de Planetas 
+
+> Mercury = zona 1 asta las que sean necesarias 
+  * La v0.0.1 = introducción 
+  * La v0.0.2 = Textos
+
+## Estos etiquetas <h></h>
+
+* Las etiquetas h1 titulo - h2 subtitulo - h3 blogs o categorias 
