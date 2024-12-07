@@ -43,13 +43,12 @@ h3 {
 /** Header y Navegación **/
 .nombre-sitio{
     margin-top: 5rem;
-    margin-bottom: 5rem;
+    /* margin-bottom: 5rem; */
     text-align: center;
 }
 .nombre-sitio span {
-    color: #037bc0;
+    color: #52e4d5;
 }
-
 .contenedor-navegacion{
     border-top: 1px solid #e1e1e1;
  }
@@ -58,7 +57,10 @@ h3 {
     display: flex;
     justify-content: space-between;
 }
-
+.nav-principal a:hover{
+    color: #34e7d5;
+    transition: font-size 3s ease-out;
+}
 .hero {
     background-image: url(../img/principal.jpg);
     background-repeat: no-repeat;
@@ -80,10 +82,11 @@ h3 {
 }
 
 .categoria a:hover{
-    background-color: #037bc0;
-    color: #e1e1e1;
+    background-image: linear-gradient( #52e4d5 50%, #c6e8e4 100%);
+    color: #000;
     padding: 2rem;
     border-bottom-right-radius: 1rem;
+    font-weight: 500;
 }
 
 .categorias{
@@ -98,7 +101,7 @@ h3 {
 
 /* Bloque nosotros */
 .sobre-nosotros{
-    background-image: linear-gradient(to right, transparent 50%, #037bc0 50%, #037bc0 100%), url(../img/nosotros.jpg);
+    background-image: linear-gradient(to right, transparent 50%, #52e4d5 50%, #c6e8e4 100%), url(../img/nosotros.jpg);
     background-repeat: no-repeat;
     background-size: 100%, 70rem;
     background-position: left center;
@@ -111,7 +114,7 @@ h3 {
 }
 .texto-nosotros{
     grid-column: 2 / 3;
-    color: #fff;
+    color: #000;
 }
 
 /* Listado de productos */
@@ -121,19 +124,21 @@ h3 {
 
 .contenido-principal {
     padding-top: 5rem;
+    margin: 0 8rem;
 }
 .listado-producto {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     column-gap: 2rem;
     row-gap: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 .producto {
-    background-color: #037bc0;
+    background-image: linear-gradient( #52e4d5 50%, #c6e8e4 100%);
     border-bottom-left-radius: 2%;
     border-bottom-right-radius: 2%;
-
+    margin: 2rem;
+    
 }
 .producto:nth-child(1) {
     grid-column-start: 1;
@@ -170,7 +175,7 @@ h3 {
 
 .texto-producto {
     text-align: center;
-    color: #fff;
+    color: #000;
     padding: 2rem;
 }
 .texto-producto h3 {
@@ -181,23 +186,27 @@ h3 {
 }
 .texto-producto .precio{
     font-size: 2.9rem;
-    font-weight: 900;
+    font-weight: 500;
+    margin: 1rem;
 }
 .texto-producto a{
-    background-color: #339e1e;
+    border: 2px solid #30847d;
     display: block;
-    color: #fff;
+    color: #000;
+    border-radius: 4%;
     text-transform: uppercase;
     font-weight: 700;
     padding: 1rem;
     transition: background-color .3s ease-out;
 }
 .texto-producto a:hover{
-    background-color: #2b731c;
+    background-color: #46b7ac;
+    color: #fff;
 }
 /*Seccion footer*/
 .site-footer{
     border-top: 1px solid #a0a0a0;
+    background-image: linear-gradient(to right, #52e4d5 50%, #c6e8e4 80%);
     margin-top: 5rem;
     padding-top: 5rem;
 }
@@ -216,6 +225,16 @@ h3 {
     margin-top: 4rem;
     padding: .5rem;
     text-align: center;
-    border-top: 1px dashed #a79d9d;
-    
+    border-top: 1px dashed #a79d9d; 
+}
+/*Nosotros*/
+.contenido-nosotros{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 4rem;
+}
+.informacion-nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
