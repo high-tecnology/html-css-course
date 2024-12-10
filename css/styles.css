@@ -11,7 +11,7 @@ body {
     line-height: 2;
 
 }
-/** Globales **/
+/** GLOBALES **/
 h1{
     font-size: 5rem;
 }
@@ -39,6 +39,30 @@ img {
 h3 {
     font-size: 3rem;
 }
+
+.btn{
+    border: 2px solid #30847d;
+    display: block;
+    padding: 1rem 10rem;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: background-color .3s ease-out;
+    border: none;
+}
+.btn:hover{
+    background-color: #46b7ac;
+    color: #fff;
+    cursor: pointer;
+}
+/*UTILIDADES*/
+.text-center{
+    text-align: center;
+}
+.max-width-30{
+    max-width: 30rem;
+}
+/*MODULOS*/
 
 /** Header y Navegación **/
 .nombre-sitio{
@@ -237,4 +261,82 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+/*BLOG*/
+.contenedor-blog{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 4rem;
+}
+
+.entrada{
+    border-bottom: 2px solid #e1e1e1;
+    padding-bottom: 4rem;
+    margin-bottom: 2rem;
+}
+.entrada:last-of-type{
+    border: none;
+}
+.entrada-meta{
+    display: flex;
+    justify-content: space-between;
+}
+.entrada-meta p{
+    font-weight: 700;
+}
+.entrada-meta span{
+    color: cornflowerblue;
+    
+}
+/*Entrada blog*/
+.entrada-blog{
+    width: 60rem;
+    margin: 0 auto;
+    
+}
+/* Galeria */
+.galeria{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem;
+}
+.galeria img{
+    height: 30rem;
+    width: 40rem;
+    object-fit: cover; 
+}
+/* Formulario */
+.formulario{
+    max-width: 60rem;
+    margin: 0 auto;
+}
+.formulario fieldset{
+    border: 1px solid #000;
+    margin-bottom: 2rem;
+}
+.formulario legend{
+    background-image: linear-gradient(to right, #52e4d5 50%, #c6e8e4 100%);
+    padding: 0 2rem;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+.campo{
+    display: flex;   
+    margin-bottom: 2rem; 
+}
+.campo label {
+    flex-basis: 10rem;
+}
+.campo input:not([type="radio"]), 
+.campo textarea,
+.campo select {
+    flex: 1;
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
 }
